@@ -1,0 +1,10 @@
+Zoom in or out of an image.
+Args:
+	img (str): Path to an image file.
+	coords (tuple): Coordinates of the top-left corner of the zoomed area.
+	size (tuple): Size of the zoomed area.
+
+Image loaded from path: animal.jpeg
+Image size: 768 x 1024 x 3
+3
+(368, 100, 3)
