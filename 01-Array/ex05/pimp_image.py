@@ -1,7 +1,6 @@
 from load_image import ft_load
-from PIL import Image
+from PIL import Image, ImageOps
 import numpy
-import PIL.ImageOps 
 
 def ft_invert(array):
 	"""Invert color of a picture"""
@@ -37,12 +36,9 @@ def ft_red(array):
 def ft_grey(array):
 	"""Image become grey"""
 	grey = numpy.copy(array)
-	rows, cols, channels = grey.shape
-	for y in range(rows):
-		for x in range(cols):
-			for z in range(channels):
-				grey[y][x][z] = 1 if grey[y][x][z] > 128 else grey[y][x][z]
-	return grey
+	grey = Image.fromarray(grey)
+	grey = ImageOps.grayscale(grey)
+	return numpy.array(grey)
 
 def do_img(array, function, save_to):
 	new = function(array)
