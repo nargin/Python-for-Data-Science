@@ -1,6 +1,11 @@
 import sys
 
 
+def is_valid_integer(s):
+    if s.startswith(('+', '-')):
+        return s[1:].isdigit()
+    return s.isdigit()
+
 def main():
     len_args = len(sys.argv)
     if len_args == 1:
@@ -10,7 +15,7 @@ def main():
         assert len_args == 2, "more than one argument is provided"
 
         owo = sys.argv[1]
-        assert owo.isnumeric(), "argument is not a number"
+        assert is_valid_integer(owo), "argument is not an integer"
         owo = int(owo)
 
     except AssertionError as e:
