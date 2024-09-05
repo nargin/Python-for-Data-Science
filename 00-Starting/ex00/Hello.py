@@ -1,20 +1,21 @@
 
 
 def main():
-	ft_list = ["Hello", "tata!"]
-	ft_tuple = ("Hello", "toto!")
-	ft_set = {"Hello", "tutu!"}
-	ft_dict = {"Hello" : "titi!"}
+    ft_list = ["Hello", "tata!"]
+    ft_tuple = ("Hello", "toto!")
+    ft_set = {"Hello", "tutu!"}
+    ft_dict = {"Hello": "titi!"}
 
-	ft_list = ["Hello", "World!"]
-	ft_tuple = ("Hello", "France!")
-	ft_set = {"Hello", "Perpignan!"}
-	ft_dict = {"Hello" : "42Perpignan!"}
+    ft_list = ["Hello", "World!"]
+    ft_tuple = ("Hello", "France!")
+    ft_set = {"Hello", "Perpignan!"}
+    ft_dict = {"Hello": "42Perpignan!"}
 
-	print(ft_list)
-	print(ft_tuple)
-	print(ft_set)
-	print(ft_dict)
+    print(ft_list)
+    print(ft_tuple)
+    print(ft_set)
+    print(ft_dict)
+
 
 if __name__ == '__main__':
-	main()
+    main()
