@@ -21,19 +21,16 @@ class calculator:
     @validate_vectors
     def dotproduct(V1: list[float], V2: list[float]) -> None:
         """Return the dot product of two vectors"""
-        # calculator.__validate_vectors(V1, V2)
         print(sum([V1[i] * V2[i] for i in range(len(V1))]))
 
     @staticmethod
     @validate_vectors
     def add_vec(V1: list[float], V2: list[float]) -> None:
         """Return the sum of two vectors"""
-        # calculator.__validate_vectors(V1, V2)
         print([V1[i] + V2[i] for i in range(len(V1))])
 
     @staticmethod
     @validate_vectors
     def sous_vec(V1: list[float], V2: list[float]) -> None:
         """Return the difference of two vectors"""
-        # calculator.__validate_vectors(V1, V2)
         print([V1[i] - V2[i] for i in range(len(V1))])
