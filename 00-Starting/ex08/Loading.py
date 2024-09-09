@@ -1,5 +1,5 @@
 from time import sleep
-from tqdm import tqdm
+# from tqdm import tqdm
 
 
 def ft_tqdm(iterable: range):

@@ -6,6 +6,7 @@ def is_valid_integer(s):
         return s[1:].isdigit()
     return s.isdigit()
 
+
 def main():
     len_args = len(sys.argv)
     if len_args == 1:
