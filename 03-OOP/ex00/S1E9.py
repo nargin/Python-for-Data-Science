@@ -1,21 +1,27 @@
 from abc import ABC, abstractmethod
 
+
 class Character(ABC):
 	"""Character class name: str, is_alive: bool"""
 	name = ""
 	is_alive = True
 
-	@abstractmethod
 	def die(self):
-		"""Mort"""
+		"""Die method"""
 		pass
+
+	@abstractmethod
 	def __init__(self, name, alive=True):
-		"""init la"""
+		"""Character init"""
 		self.name = name
-		self.is_alive = alive		
+		self.is_alive = alive
 
 class Stark(Character):
-	"""Docstring au top :D"""
+	"""Stark: Docstring au top :D"""
+	def __init__(self, name, alive=True):
+		"""Stark: init"""
+		super().__init__(name, alive)
+
 	def die(self):
-		"""Mort 2"""
-		self.alive = False
+		"""Stark: set alive to False"""
+		self.is_alive = False

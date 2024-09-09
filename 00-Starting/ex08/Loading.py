@@ -22,8 +22,8 @@ def ft_tqdm(iterable: range):
 def main():
     for _ in ft_tqdm(range(333)):
         sleep(0.01)
-    for _ in tqdm(range(333)):
-        sleep(0.01)
+    # for _ in tqdm(range(333)):
+    #     sleep(0.01)
 
 
 if __name__ == '__main__':

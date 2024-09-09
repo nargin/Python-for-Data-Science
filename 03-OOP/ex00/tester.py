@@ -16,5 +16,7 @@ def main():
 	Lyanna = Stark("Lyanna", False)
 	print(Lyanna.__dict__)
 
+	# hodor = Character("Hodor")
+
 if __name__ == "__main__":
 	main()
