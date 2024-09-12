@@ -8,7 +8,7 @@ def generate_id() -> str:
     return "".join(random.choices(string.ascii_lowercase, k=15))
 
 
-@dataclass(repr=True)
+@dataclass
 class Student:
     """Class representing a student."""
     name: str = field(init=True)
